@@ -19,4 +19,4 @@ Shrine.storage = {
 }
 
 
-Shrine.plugin :activerecord
+Shrine.plugin :activerecordx

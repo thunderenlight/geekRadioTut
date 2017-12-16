@@ -11,7 +11,7 @@ s3_options = {
 	bucket: ENV['S3_BUCKET']
 }
 
-Shrine.storage = {
+Shrine.storages = {
 	cache: Shrine::Storage::FileSystem.new("tmp/uploads"),
 	store: Shrine::Storage::S3.new(upload_options: { acl: "public-read"}, prefix: "store",
 								  **s3_options),

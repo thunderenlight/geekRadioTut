@@ -437,3 +437,332 @@ app/views/layouts/admin.html.erb:6:in `_app_views_layouts_admin_html_erb___31797
   Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
   Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
   Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (93.0ms)
+Started GET "/" for 127.0.0.1 at 2017-12-17 21:27:34 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/railties-5.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/railties-5.0.6/lib/rails/templates/rails/welcome/index.html.erb (5.8ms)
+Completed 200 OK in 63ms (Views: 39.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2017-12-17 21:27:46 -0600
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/admin
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered songs/index.html.erb within layouts/admin (21.7ms)
+Completed 500 Internal Server Error in 208ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `crsf_meta_tags' for #<#<Class:0x007fb094d81ea8>:0x007fb09222bee8>):
+    3: <head>
+    4: 	<meta charset="utf-8">
+    5: 	<title>GeekRadio Admin</title>
+    6: 	<%= crsf_meta_tags %>
+    7: 
+    8: 	<%= javascript_include_tag 'admin', 'data-turbolinks-track': 'reload' %>
+    9: 
+  
+app/views/layouts/admin.html.erb:6:in `_app_views_layouts_admin_html_erb__2309575735127604365_70198194069120'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (129.1ms)
+Started GET "/songs" for 127.0.0.1 at 2017-12-17 21:29:23 -0600
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/admin
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered songs/index.html.erb within layouts/admin (1.5ms)
+Completed 500 Internal Server Error in 131ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `crsf_meta_tags' for #<#<Class:0x007fb094d81ea8>:0x007fb094cba128>):
+    3: <head>
+    4: 	<meta charset="utf-8">
+    5: 	<title>GeekRadio Admin</title>
+    6: 	<%= crsf_meta_tags %>
+    7: 
+    8: 	<%= javascript_include_tag 'admin', 'data-turbolinks-track': 'reload' %>
+    9: 
+  
+app/views/layouts/admin.html.erb:6:in `_app_views_layouts_admin_html_erb__2309575735127604365_70198193654360'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (94.6ms)
+Started GET "/songs" for 127.0.0.1 at 2017-12-17 21:29:25 -0600
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/admin
+  [1m[36mSong Load (0.1ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered songs/index.html.erb within layouts/admin (1.2ms)
+Completed 500 Internal Server Error in 133ms (ActiveRecord: 0.1ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `crsf_meta_tags' for #<#<Class:0x007fb094d81ea8>:0x007fb091faa7a0>):
+    3: <head>
+    4: 	<meta charset="utf-8">
+    5: 	<title>GeekRadio Admin</title>
+    6: 	<%= crsf_meta_tags %>
+    7: 
+    8: 	<%= javascript_include_tag 'admin', 'data-turbolinks-track': 'reload' %>
+    9: 
+  
+app/views/layouts/admin.html.erb:6:in `_app_views_layouts_admin_html_erb__2309575735127604365_70198170031860'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.6ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (101.7ms)
+Started GET "/" for 127.0.0.1 at 2017-12-17 21:30:06 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/railties-5.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/railties-5.0.6/lib/rails/templates/rails/welcome/index.html.erb (3.1ms)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2017-12-17 21:30:13 -0600
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/admin
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered songs/index.html.erb within layouts/admin (2.5ms)
+Completed 500 Internal Server Error in 138ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `crsf_meta_tags' for #<#<Class:0x007fb094d81ea8>:0x007fb090d00550>):
+    3: <head>
+    4: 	<meta charset="utf-8">
+    5: 	<title>GeekRadio Admin</title>
+    6: 	<%= crsf_meta_tags %>
+    7: 
+    8: 	<%= javascript_include_tag 'admin' %>
+    9: 
+  
+app/views/layouts/admin.html.erb:6:in `_app_views_layouts_admin_html_erb__2309575735127604365_70198160244840'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.8ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (110.1ms)
+Started GET "/songs" for 127.0.0.1 at 2017-12-17 21:59:11 -0600
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/admin
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered songs/index.html.erb within layouts/admin (3.3ms)
+Completed 500 Internal Server Error in 158ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `crsf_meta_tags' for #<#<Class:0x007fb094d81ea8>:0x007fb094afbad0>):
+    3: <head>
+    4: 	<meta charset="utf-8">
+    5: 	<title>GeekRadio Admin</title>
+    6: 	<%= crsf_meta_tags %>
+    7: 
+    8: 	<%= javascript_include_tag 'admin', 'data-turbolinks-track': 'reload' %>
+    9: 
+  
+app/views/layouts/admin.html.erb:6:in `_app_views_layouts_admin_html_erb__2309575735127604365_70198192918140'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (96.6ms)
+Started GET "/songs" for 127.0.0.1 at 2017-12-17 22:23:42 -0600
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/admin
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered songs/index.html.erb within layouts/admin (1.5ms)
+Completed 500 Internal Server Error in 137ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `crsf_meta_tags' for #<#<Class:0x007fb094d81ea8>:0x007fb094973690>):
+    3: <head>
+    4: 	<meta charset="utf-8">
+    5: 	<title>GeekRadio Admin</title>
+    6: 	<%= crsf_meta_tags %>
+    7: 
+    8: 	<%= javascript_include_tag 'admin', 'data-turbolinks-track': 'reload' %>
+    9: 
+  
+app/views/layouts/admin.html.erb:6:in `_app_views_layouts_admin_html_erb__2309575735127604365_70198159727220'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (94.3ms)
+Started GET "/songs" for 127.0.0.1 at 2017-12-17 22:24:27 -0600
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/admin
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered songs/index.html.erb within layouts/admin (2.5ms)
+Completed 500 Internal Server Error in 317ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'rails-ujs' with type 'application/javascript'
+Checked in these paths: 
+  /Users/iNjaro/Sites/Rails_Apps/geekRadioTut/app/assets/config
+  /Users/iNjaro/Sites/Rails_Apps/geekRadioTut/app/assets/images
+  /Users/iNjaro/Sites/Rails_Apps/geekRadioTut/app/assets/javascripts
+  /Users/iNjaro/Sites/Rails_Apps/geekRadioTut/app/assets/stylesheets
+  /Users/iNjaro/Sites/Rails_Apps/geekRadioTut/vendor/assets/javascripts
+  /Users/iNjaro/Sites/Rails_Apps/geekRadioTut/vendor/assets/stylesheets
+  /usr/local/lib/ruby/gems/2.2.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /usr/local/lib/ruby/gems/2.2.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/lib/ruby/gems/2.2.0/gems/actioncable-5.0.6/lib/assets/compiled
+  /usr/local/lib/ruby/gems/2.2.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts):
+     5:   <title>GeekRadio Admin</title>
+     6:   <%= csrf_meta_tags %>
+     7: 
+     8:   <%= javascript_include_tag 'admin', 'data-turbolinks-track': 'reload' %>
+     9: </head>
+    10: 
+    11: <body>
+  
+app/assets/javascripts/admin.js:2
+app/views/layouts/admin.html.erb:8:in `_app_views_layouts_admin_html_erb__2309575735127604365_70198193870680'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.8ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (101.2ms)
+Started GET "/songs" for 127.0.0.1 at 2017-12-17 22:25:05 -0600
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/admin
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered songs/index.html.erb within layouts/admin (2.5ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'rails-ujs' with type 'application/javascript'
+Checked in these paths: 
+  /Users/iNjaro/Sites/Rails_Apps/geekRadioTut/app/assets/config
+  /Users/iNjaro/Sites/Rails_Apps/geekRadioTut/app/assets/images
+  /Users/iNjaro/Sites/Rails_Apps/geekRadioTut/app/assets/javascripts
+  /Users/iNjaro/Sites/Rails_Apps/geekRadioTut/app/assets/stylesheets
+  /Users/iNjaro/Sites/Rails_Apps/geekRadioTut/vendor/assets/javascripts
+  /Users/iNjaro/Sites/Rails_Apps/geekRadioTut/vendor/assets/stylesheets
+  /usr/local/lib/ruby/gems/2.2.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /usr/local/lib/ruby/gems/2.2.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/lib/ruby/gems/2.2.0/gems/actioncable-5.0.6/lib/assets/compiled
+  /usr/local/lib/ruby/gems/2.2.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts):
+     5: 	<title>GeekRadio Admin</title>
+     6: 	<%= csrf_meta_tags %>
+     7: 
+     8: 	<%= javascript_include_tag 'admin', 'data-turbolinks-track': 'reload' %>
+     9: 
+    10: </head>
+    11: 
+  
+app/assets/javascripts/admin.js:2
+app/views/layouts/admin.html.erb:8:in `_app_views_layouts_admin_html_erb__2309575735127604365_70198194045080'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (96.9ms)
+Started GET "/" for 127.0.0.1 at 2017-12-17 22:27:04 -0600
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/railties-5.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/railties-5.0.6/lib/rails/templates/rails/welcome/index.html.erb (6.0ms)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2017-12-17 22:27:09 -0600
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/admin
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered songs/index.html.erb within layouts/admin (1.5ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'rails-ujs' with type 'application/javascript'
+Checked in these paths: 
+  /Users/iNjaro/Sites/Rails_Apps/geekRadioTut/app/assets/config
+  /Users/iNjaro/Sites/Rails_Apps/geekRadioTut/app/assets/images
+  /Users/iNjaro/Sites/Rails_Apps/geekRadioTut/app/assets/javascripts
+  /Users/iNjaro/Sites/Rails_Apps/geekRadioTut/app/assets/stylesheets
+  /Users/iNjaro/Sites/Rails_Apps/geekRadioTut/vendor/assets/javascripts
+  /Users/iNjaro/Sites/Rails_Apps/geekRadioTut/vendor/assets/stylesheets
+  /usr/local/lib/ruby/gems/2.2.0/gems/jquery-rails-4.3.1/vendor/assets/javascripts
+  /usr/local/lib/ruby/gems/2.2.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /usr/local/lib/ruby/gems/2.2.0/gems/actioncable-5.0.6/lib/assets/compiled
+  /usr/local/lib/ruby/gems/2.2.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts):
+     5: 	<title>GeekRadio Admin</title>
+     6: 	<%= csrf_meta_tags %>
+     7: 
+     8: 	<%= javascript_include_tag 'admin', 'data-turbolinks-track': 'reload' %>
+     9: 
+    10: </head>
+    11: 
+  
+app/assets/javascripts/admin.js:2
+app/views/layouts/admin.html.erb:8:in `_app_views_layouts_admin_html_erb__2309575735127604365_70198210469280'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (109.7ms)
+Started GET "/songs" for 127.0.0.1 at 2017-12-17 22:27:49 -0600
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/admin
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered songs/index.html.erb within layouts/admin (2.4ms)
+Completed 200 OK in 2021ms (Views: 2018.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-17 22:27:55 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/admin
+  Rendered songs/new.html.erb within layouts/admin (0.5ms)
+Completed 200 OK in 24ms (Views: 13.6ms | ActiveRecord: 0.4ms)
+
+

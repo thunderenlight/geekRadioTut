@@ -766,3 +766,708 @@ Processing by SongsController#new as HTML
 Completed 200 OK in 24ms (Views: 13.6ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-12-20 17:06:35 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Parameters: {"internal"=>true}
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/railties-5.0.6/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/railties-5.0.6/lib/rails/templates/rails/welcome/index.html.erb (5.0ms)
+Completed 200 OK in 96ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/song" for 127.0.0.1 at 2017-12-20 17:06:42 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/song"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `call'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (112.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (24.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (292.0ms)
+Started GET "/songs" for 127.0.0.1 at 2017-12-20 17:06:46 -0600
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/admin
+  [1m[36mSong Load (11.9ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered songs/index.html.erb within layouts/admin (17.4ms)
+Completed 200 OK in 498ms (Views: 423.4ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-20 17:06:49 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/admin
+  Rendered songs/new.html.erb within layouts/admin (0.5ms)
+Completed 200 OK in 57ms (Views: 13.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-20 17:16:14 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/admin
+  Rendered songs/new.html.erb within layouts/admin (0.4ms)
+Completed 200 OK in 32ms (Views: 12.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/songs" for 127.0.0.1 at 2017-12-20 17:17:54 -0600
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/admin
+  [1m[36mSong Load (0.2ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered songs/index.html.erb within layouts/admin (1.6ms)
+Completed 200 OK in 14ms (Views: 11.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-20 17:17:56 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/admin
+  Rendered songs/_form.html.erb (143.1ms)
+  Rendered songs/new.html.erb within layouts/admin (145.2ms)
+Completed 500 Internal Server Error in 151ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `form_with' for #<#<Class:0x007fc950c3f7f0>:0x007fc94da28ac8>):
+    1: <%= form_with model: song do |f| %>
+    2: 	<div>
+    3: 		<%= f.label :title %>
+    4: 		<%= f.text_field :title %>
+  
+app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb___1079801951103323315_70251310149780'
+app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb___3481984069556590445_70251283827300'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (94.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-20 17:19:25 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/admin
+  Rendered songs/_form.html.erb (144.1ms)
+  Rendered songs/new.html.erb within layouts/admin (147.9ms)
+Completed 500 Internal Server Error in 177ms (ActiveRecord: 0.6ms)
+
+
+  
+ActionView::Template::Error (undefined method `form_with' for #<#<Class:0x007f92acd8de48>:0x007f92af980820>):
+    1: <%= form_with model: song do |f| %>
+    2: 	<div>
+    3: 		<%= f.label :title %>
+    4: 		<%= f.text_field :title %>
+  
+app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb___1474694743636979792_70133977622420'
+app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb__3385366330958754150_70133970924720'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (106.2ms)
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-20 17:20:28 -0600
+  
+ActionController::RoutingError (No route matches [GET] "/songs/new"):
+  
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `call'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (2.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (124.7ms)
+Started GET "/song/new" for 127.0.0.1 at 2017-12-20 17:20:52 -0600
+  
+ActionController::RoutingError (uninitialized constant SongController):
+  
+activesupport (5.0.6) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.6) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.6) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.6) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.6) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.6) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.6) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.6) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.6) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.6) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.6) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.6) lib/action_dispatch/routing/route_set.rb:727:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.6) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.6) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.6) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.6) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.6) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.6) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.6) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.6) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.6) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.6) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `call'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered collection of /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (2.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (121.1ms)
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-20 17:23:56 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/admin
+  Rendered songs/_form.html.erb (138.5ms)
+  Rendered songs/new.html.erb within layouts/admin (140.6ms)
+Completed 500 Internal Server Error in 156ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `form_with' for #<#<Class:0x007f92abdccec8>:0x007f92abdc65c8>):
+    1: <%= form_with model: song do |f| %>
+    2: 	<div>
+    3: 		<%= f.label :title %>
+    4: 		<%= f.text_field :title %>
+  
+app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb___1474694743636979792_70133969386780'
+app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb__3385366330958754150_70133962668180'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (96.1ms)
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-20 17:27:27 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/admin
+  Rendered songs/_form.html.erb (122.4ms)
+  Rendered songs/new.html.erb within layouts/admin (125.1ms)
+Completed 500 Internal Server Error in 132ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `form_with' for #<#<Class:0x007f92abdccec8>:0x007f92acb24170>):
+    1: <%= form_with songs: song do |f| %>
+    2: 	<div>
+    3: 		<%= f.label :title %>
+    4: 		<%= f.text_field :title %>
+  
+app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb___1474694743636979792_70133962974300'
+app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb__3385366330958754150_70133969662040'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (96.5ms)
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-20 17:28:34 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/admin
+  Rendered songs/_form.html.erb (120.8ms)
+  Rendered songs/new.html.erb within layouts/admin (122.7ms)
+Completed 500 Internal Server Error in 129ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `form_with' for #<#<Class:0x007f92abdccec8>:0x007f92abf07838>):
+    1: <%= form_with songs: song do |f| %>
+    2: 	<div>
+    3: 		<%= f.label :title %>
+    4: 		<%= f.text_field :title %>
+  
+app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb___1474694743636979792_70133963191240'
+app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb__3385366330958754150_70133963317940'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (15.3ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (97.9ms)
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-20 17:28:49 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/admin
+  Rendered songs/_form.html.erb (136.1ms)
+  Rendered songs/new.html.erb within layouts/admin (138.7ms)
+Completed 500 Internal Server Error in 145ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `form_with' for #<#<Class:0x007f92abdccec8>:0x007f92ac289c18>):
+    1: <%= form_with song: song do |f| %>
+    2: 	<div>
+    3: 		<%= f.label :title %>
+    4: 		<%= f.text_field :title %>
+  
+app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb___1474694743636979792_70133963324740'
+app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb__3385366330958754150_70133965150120'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (15.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (100.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/songs" for 127.0.0.1 at 2017-12-20 17:30:55 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/admin
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered songs/index.html.erb within layouts/admin (10.5ms)
+Completed 200 OK in 347ms (Views: 331.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-20 17:30:59 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/admin
+  Rendered songs/_form.html.erb (166.1ms)
+  Rendered songs/new.html.erb within layouts/admin (168.0ms)
+Completed 500 Internal Server Error in 180ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `form_with' for #<#<Class:0x007ff5948dbd28>:0x007ff59556bf98>):
+    1: <%= form_with model: song do |f| %>
+    2: 	<div>
+    3: 		<%= f.label :title %>
+    4: 		<%= f.text_field :title %>
+  
+app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb__4019738245804223871_70346369846060'
+app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb___1532913716345109489_70346369835860'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.8ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (103.4ms)
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-20 17:31:42 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/admin
+  Rendered songs/_form.html.erb (125.1ms)
+  Rendered songs/new.html.erb within layouts/admin (127.5ms)
+Completed 500 Internal Server Error in 133ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `form_with' for #<#<Class:0x007ff5948dbd28>:0x007ff594b6c678>):
+    1: <%= form_with model: song do |f| %>
+    2:   <div>
+    3:     <%= f.label :title %>
+    4:     <%= f.text_field :title %>
+  
+app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb__4019738245804223871_70346374896060'
+app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb___1532913716345109489_70346369363900'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (106.4ms)
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-20 17:32:49 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/admin
+  Rendered songs/_form.html.erb (131.6ms)
+  Rendered songs/new.html.erb within layouts/admin (134.0ms)
+Completed 500 Internal Server Error in 141ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `form_with' for #<#<Class:0x007ff5948dbd28>:0x007ff59111fec0>):
+    1: <%= form_with model: @song do |f| %>
+    2:   <div>
+    3:     <%= f.label :title %>
+    4:     <%= f.text_field :title %>
+  
+app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb__4019738245804223871_70346336013320'
+app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb___1532913716345109489_70346338821920'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (99.8ms)
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-20 17:35:22 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/admin
+  Rendered songs/_form.html.erb (143.1ms)
+  Rendered songs/new.html.erb within layouts/admin (145.6ms)
+Completed 500 Internal Server Error in 151ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `form_with' for #<#<Class:0x007ff5948dbd28>:0x007ff5915a7330>):
+    1: <%= form_with model: @song do |f| %>
+    2:   <div>
+    3:     <%= f.label :title %>
+    4:     <%= f.text_field :title %>
+  
+app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb__4019738245804223871_70346341180700'
+app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb___1532913716345109489_70346341170840'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.8ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (104.9ms)
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-20 17:37:26 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/admin
+  Rendered songs/_form.html.erb (130.0ms)
+  Rendered songs/new.html.erb within layouts/admin (140.1ms)
+Completed 500 Internal Server Error in 147ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `form_with' for #<#<Class:0x007ff5948dbd28>:0x007ff594db0628>):
+    1: <%= form_with model: @song do |f| %>
+    2:   <div>
+    3:     <%= f.label :title %>
+    4:     <%= f.text_field :title %>
+  
+app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb__4019738245804223871_70346397125660'
+app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb___1532913716345109489_70346370549780'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (19.3ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (109.0ms)
+Started GET "/songs" for 127.0.0.1 at 2017-12-20 17:37:32 -0600
+Processing by SongsController#index as HTML
+  Rendering songs/index.html.erb within layouts/admin
+  [1m[36mSong Load (0.3ms)[0m  [1m[34mSELECT "songs".* FROM "songs"[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered songs/index.html.erb within layouts/admin (1.7ms)
+Completed 200 OK in 16ms (Views: 12.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-20 17:37:33 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/admin
+  Rendered songs/_form.html.erb (132.1ms)
+  Rendered songs/new.html.erb within layouts/admin (134.1ms)
+Completed 500 Internal Server Error in 140ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `form_with' for #<#<Class:0x007ff5948dbd28>:0x007ff591577bd0>):
+    1: <%= form_with model: @song do |f| %>
+    2:   <div>
+    3:     <%= f.label :title %>
+    4:     <%= f.text_field :title %>
+  
+app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb__4019738245804223871_70346340821220'
+app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb___1532913716345109489_70346370155280'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (101.0ms)
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-20 17:40:42 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/admin
+  Rendered songs/_form.html.erb (125.2ms)
+  Rendered songs/new.html.erb within layouts/admin (127.8ms)
+Completed 500 Internal Server Error in 134ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `form_with' for #<#<Class:0x007ff5948dbd28>:0x007ff594eda850>):
+    1: <%= form_with song: @song do |f| %>
+    2:   <div>
+    3:     <%= f.label :title %>
+    4:     <%= f.text_field :title %>
+  
+app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb__4019738245804223871_70346341103740'
+app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb___1532913716345109489_70346371160380'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.6ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (106.0ms)
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-20 17:40:51 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/admin
+  Rendered songs/_form.html.erb (122.8ms)
+  Rendered songs/new.html.erb within layouts/admin (125.5ms)
+Completed 500 Internal Server Error in 133ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `form_with' for #<#<Class:0x007ff5948dbd28>:0x007ff59549b988>):
+    1: <%= form_with song: @song do |f| %>
+    2:   <div>
+    3:     <%= f.label :title %>
+    4:     <%= f.text_field :title %>
+  
+app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb__4019738245804223871_70346374154180'
+app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb___1532913716345109489_70346374185500'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.2ms)
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-20 17:41:40 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/admin
+  Rendered songs/_form.html.erb (141.6ms)
+  Rendered songs/new.html.erb within layouts/admin (144.8ms)
+Completed 500 Internal Server Error in 150ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `form_with' for #<#<Class:0x007ff5948dbd28>:0x007ff594b5cb38>):
+    1: <%= form_with @song do |f| %>
+    2:   <div>
+    3:     <%= f.label :title %>
+    4:     <%= f.text_field :title %>
+  
+app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb__4019738245804223871_70346340418900'
+app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb___1532913716345109489_70346369331740'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (106.7ms)
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-20 17:42:48 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/admin
+  Rendered songs/_form.html.erb (127.2ms)
+  Rendered songs/new.html.erb within layouts/admin (129.9ms)
+Completed 500 Internal Server Error in 139ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `form_with' for #<#<Class:0x007ff5948dbd28>:0x007ff5913346c0>):
+    1: <%= form_with song do |f| %>
+    2:   <div>
+    3:     <%= f.label :title %>
+    4:     <%= f.text_field :title %>
+  
+app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb__4019738245804223871_70346368656400'
+app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb___1532913716345109489_70346339889120'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.1ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (99.4ms)
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-20 17:47:33 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/admin
+  Rendered songs/_form.html.erb (2.7ms)
+  Rendered songs/new.html.erb within layouts/admin (4.6ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for #<Hash:0x007ff594ce9f50>):
+    1: <%= form_for song: @song do |f| %>
+    2:   <div>
+    3:     <%= f.label :title %>
+    4:     <%= f.text_field :title %>
+  
+app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb__4019738245804223871_70346374823020'
+app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb___1532913716345109489_70346374501900'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (16.8ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (108.7ms)
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-20 17:49:23 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/admin
+  Rendered songs/_form.html.erb (105.2ms)
+  Rendered songs/new.html.erb within layouts/admin (107.6ms)
+Completed 500 Internal Server Error in 115ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `singer' for #<Song:0x007ff59149c5a8>):
+     6: 
+     7:   <div>
+     8:     <%= f.label :singer %>
+     9:     <%= f.text_field :singer %>
+    10:   </div>
+    11: 
+    12:   <div>
+  
+app/views/songs/_form.html.erb:9:in `block in _app_views_songs__form_html_erb__4019738245804223871_70346375819820'
+app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb__4019738245804223871_70346375819820'
+app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb___1532913716345109489_70346340612120'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.4ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (109.7ms)
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-20 18:14:38 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/admin
+  Rendered songs/_form.html.erb (6.3ms)
+  Rendered songs/new.html.erb within layouts/admin (11.1ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `singer' for #<Song:0x007ff5980ea868>):
+     6: 
+     7:   <div>
+     8:     <%= f.label :singer %>
+     9:     <%= f.text_field :singer %>
+    10:   </div>
+    11: 
+    12:   <div>
+  
+app/views/songs/_form.html.erb:9:in `block in _app_views_songs__form_html_erb__4019738245804223871_70346401516160'
+app/views/songs/_form.html.erb:1:in `_app_views_songs__form_html_erb__4019738245804223871_70346401516160'
+app/views/songs/new.html.erb:3:in `_app_views_songs_new_html_erb___1532913716345109489_70346397403540'
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.9ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendering /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-5.0.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (95.3ms)
+Started GET "/songs/new" for 127.0.0.1 at 2017-12-20 18:20:01 -0600
+Processing by SongsController#new as HTML
+  Rendering songs/new.html.erb within layouts/admin
+  Rendered songs/_form.html.erb (38.1ms)
+  Rendered songs/new.html.erb within layouts/admin (40.4ms)
+Completed 200 OK in 59ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+

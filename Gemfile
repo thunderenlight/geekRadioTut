@@ -30,6 +30,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'shrine'
 gem 'dotenv-rails'
 gem 'aws-sdk-s3', '~> 1'
+gem 'ruby-shout'
+gem 'sidekiq'
 # gem 'aws-sdk'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'

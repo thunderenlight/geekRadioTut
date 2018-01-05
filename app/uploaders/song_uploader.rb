@@ -1,2 +1,4 @@
 class SongUploader < Shrine
+
+
 end

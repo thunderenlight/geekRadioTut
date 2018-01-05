@@ -20,3 +20,4 @@ Shrine.storages = {
 
 
 Shrine.plugin :activerecord
+Shrine.plugin :add_metadata
